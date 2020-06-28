@@ -1,0 +1,20 @@
+$body-bg: #f3f3f3;
+
+$utilities: () !default;
+
+$utilities: map-merge(
+    (
+        "opacity": (
+            property: opacity,
+            values: (
+                0: 0,
+                25: .25,
+                50: .5,
+                100: 1,
+            )
+        )
+    ), $utilities);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
